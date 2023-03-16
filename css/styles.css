@@ -1,0 +1,272 @@
+/* Parámetros generales */
+:root {
+  --main-color: #2196f3;
+  --banner-color: #2f303a;
+  --text-black: #212121;
+  --text-grey: #757575;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-black);
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Sección de navegación */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  border-bottom: 1px solid #ececec;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  color: var(--main-color);
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  margin-right: 93px;
+}
+.header-list-nav {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+}
+.header-item-nav > .header-link {
+  color: var(--text-black);
+  text-decoration: none;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 50px;
+}
+.header-item-nav > .header-link:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+.header-item-nav > .active-color {
+  color: var(--main-color);
+}
+.header-list-address {
+  list-style: none;
+  display: flex;
+}
+.header-item-address > .header-link {
+  color: var(--text-grey);
+  text-decoration: none;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 50px;
+}
+/* Animación de cursor */
+.header-item-address > .header-link:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+/* Banner "Soluciones eficaces..." */
+.main-banner {
+  background: var(--banner-color);
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 44px;
+  margin: 0%;
+}
+.button-service {
+  margin-top: 30px;
+}
+.button-title {
+  background-color: var(--main-color);
+  padding: 10px 32px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.button-title:hover {
+  cursor: pointer;
+}
+/* Datos destacados de la empresa */
+.section-values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+.article-values {
+  width: 270px;
+}
+.section-subtitles {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-black);
+  font-weight: 700;
+  font-size: 14px;
+}
+.section-paragraph {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-grey);
+  font-weight: 400;
+  font-size: 14px;
+}
+/* A que nos dedicamos */
+.second-section-subtitle {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-black);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin: 0px 0px 55px 0px;
+}
+.second-section-list-images {
+  list-style: none;
+  margin: 0px 0px 94px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.welcome-images {
+  width: 373.16px;
+}
+/* Sección equipo de trabajo */
+.section-team {
+  background-color: #f5f4fa;
+}
+.third-section-subtitle {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-black);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 74px;
+  margin-bottom: 50px;
+}
+.main-section-team {
+  display: flex;
+  justify-content: space-between;
+}
+.team-names {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-black);
+  font-weight: 500;
+  font-size: 16px;
+}
+.images-team {
+  width: 270px;
+}
+.articles-third-section {
+  text-align: center;
+  background-color: white;
+  margin-bottom: 94px;
+  border-radius: 0px 0px 4px 4px;
+  border-bottom: 2px solid #bbb7b7;
+}
+.team-names-post {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-grey);
+  font-weight: 400;
+  font-size: 16px;
+}
+/* Pie de pagina */
+.footer {
+  background-color: var(--banner-color);
+  height: 252px;
+  display: flex;
+  align-items: center;
+}
+.footer-address {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+}
+.footer-main-list {
+  list-style: none;
+  padding: 0%;
+  margin: 0%;
+}
+.footer-link {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: var(--main-color);
+}
+/* =====Page Portfolio==== */
+.section-menu-portfolio {
+  display: flex;
+  justify-content: center;
+  margin-top: 106px;
+  margin-bottom: 50px;
+  list-style: none;
+  text-align: center;
+}
+.button-title-menu {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-black);
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #f5f4fa;
+  margin-right: 8px;
+  padding: 6px 26px 6px 26px;
+  border-radius: 4px;
+  border-color: #f5f4fa;
+}
+.button-title-menu:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: white;
+}
+.second-section-list-portfolio {
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.images-portfolio {
+  width: 370px;
+}
+.item-list-porfolio {
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+}
+.item-list-porfolio:hover {
+  cursor: pointer;
+  border-right: 3px solid #b8b2b2;
+  border-bottom: 3px solid #b8b2b2;
+}
+.item-list-texts {
+  margin-left: 30px;
+  width: 322px;
+}
+.item-portfolio {
+  font-size: 18px;
+  font-weight: 700;
+}
+.item-portfolio-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-grey);
+}

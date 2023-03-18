@@ -60,8 +60,23 @@ body {
 .header-list-address {
   list-style: none;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 }
-.header-item-address > .header-link {
+.header-item-address {
+  display: flex;
+}
+.header-item-address:hover .address-icon {
+  fill: var(--main-color);
+  cursor: pointer;
+}
+/*----------- Animación de cursor ---------------*/
+.header-item-address:hover .header-link {
+  color: var(--main-color);
+  cursor: pointer;
+}
+.header-link {
   color: var(--text-grey);
   text-decoration: none;
   text-align: left;
@@ -69,16 +84,28 @@ body {
   font-size: 14px;
   font-weight: 700;
   margin-right: 50px;
+  margin-left: 10px;
 }
-/* Animación de cursor */
-.header-item-address > .header-link:hover {
-  color: var(--main-color);
-  cursor: pointer;
+.address-icon {
+  width: 16px;
+  height: 16px;
+  margin-bottom: 0px;
+  fill: var(--text-grey);
 }
 /* Banner "Soluciones eficaces..." */
 .main-banner {
-  background: var(--banner-color);
+  background-image: url(../images/Team.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto;
   height: 600px;
+}
+.banner-backgroun-rbga {
+  background: rgba(47, 48, 58, 0.4);
+  width: 1600px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,7 +170,7 @@ body {
 .welcome-images {
   width: 373.16px;
 }
-/* Sección equipo de trabajo */
+/* =======Sección equipo de trabajo====== */
 .section-team {
   background-color: #f5f4fa;
 }
@@ -160,6 +187,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.articles-third-section {
+  text-align: center;
+  background-color: white;
+  margin-bottom: 94px;
+  border-radius: 0px 0px 4px 4px;
+  border-bottom: 2px solid #bbb7b7;
+}
 .team-names {
   font-family: 'Roboto', sans-serif;
   color: var(--text-black);
@@ -169,20 +203,41 @@ body {
 .images-team {
   width: 270px;
 }
-.articles-third-section {
-  text-align: center;
-  background-color: white;
-  margin-bottom: 94px;
-  border-radius: 0px 0px 4px 4px;
-  border-bottom: 2px solid #bbb7b7;
-}
 .team-names-post {
   font-family: 'Roboto', sans-serif;
   color: var(--text-grey);
   font-weight: 400;
   font-size: 16px;
 }
-/* Pie de pagina */
+.container-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+.icon-bg {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  fill: var(--text-grey);
+  width: 20px;
+  height: 20px;
+}
+.icon-bg:hover {
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+.icon-bg:hover .icon {
+  fill: white;
+}
+/* ------Pie de pagina------*/
 .footer {
   background-color: var(--banner-color);
   height: 252px;

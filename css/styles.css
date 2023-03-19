@@ -99,6 +99,7 @@ body {
   background-position: 50% 50%;
   background-size: auto;
   height: 600px;
+  display: flex;
 }
 .banner-backgroun-rbga {
   background: rgba(47, 48, 58, 0.4);
@@ -115,6 +116,8 @@ body {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 44px;
+  width: 600px;
+  text-align: center;
   margin: 0%;
 }
 .button-service {
@@ -130,7 +133,7 @@ body {
 .button-title:hover {
   cursor: pointer;
 }
-/* Datos destacados de la empresa */
+/* ----- Primera sección valores --------- */
 .section-values {
   display: flex;
   justify-content: space-between;
@@ -139,6 +142,18 @@ body {
 }
 .article-values {
   width: 270px;
+}
+.values-icons-bg {
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.values-icons {
+  width: 70px;
+  height: 70px;
 }
 .section-subtitles {
   font-family: 'Roboto', sans-serif;
@@ -211,7 +226,7 @@ body {
 }
 .container-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   margin-top: 16px;
   margin-bottom: 30px;
@@ -224,6 +239,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .icon {
   fill: var(--text-grey);
@@ -237,12 +254,45 @@ body {
 .icon-bg:hover .icon {
   fill: white;
 }
+/* <!-- Clientes regulares --> */
+.icons-customers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 151px;
+}
+.icon-bg-customer {
+  width: 170px;
+  height: 81px;
+  border: 1px solid #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+.icon-customers {
+  width: 50%;
+  height: 50%;
+  fill: #afb1b8;
+}
+.icon-bg-customer:hover {
+  cursor: pointer;
+  border: 1px solid var(--main-color);
+}
+.icon-bg-customer:hover .icon-customers {
+  fill: var(--main-color);
+}
 /* ------Pie de pagina------*/
 .footer {
   background-color: var(--banner-color);
   height: 252px;
   display: flex;
   align-items: center;
+}
+.footer-main {
+  display: flex;
 }
 .footer-address {
   font-family: 'Roboto', sans-serif;
@@ -265,6 +315,44 @@ body {
 .footer-link:hover {
   color: var(--main-color);
 }
+.container-social-networks {
+  display: flex;
+  flex-direction: column;
+}
+.footer-social-networks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.text-footer-social-networks {
+  color: white;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+.icon-bg-footer {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.icon-footer {
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+.icon-bg-footer:hover {
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
 /* =====Page Portfolio==== */
 .section-menu-portfolio {
   display: flex;
